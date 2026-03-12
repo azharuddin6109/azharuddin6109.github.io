@@ -1,219 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<title>MD Azhar Uddin | Developer Portfolio</title>
+<title>MD Azhar Uddin | Developer</title>
 
 <style>
 
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background: linear-gradient(135deg,#020617,#0f172a);
+background: linear-gradient(135deg,#020617,#0f172a,#020617);
 color:white;
 }
 
-/* Navbar */
+/* Main container */
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:#020617;
-border-bottom:1px solid #1e293b;
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
 }
 
-nav h1{
+/* Header card */
+
+.header-card{
+background:#0f172a;
+border:1px solid #1e293b;
+border-radius:14px;
+padding:30px;
+margin-bottom:40px;
+}
+
+.header-card h1{
+margin:0;
 color:#38bdf8;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-size:16px;
-}
-
-nav a:hover{
-color:#38bdf8;
-}
-
-/* Hero */
-
-.hero{
-text-align:center;
-padding:100px 20px;
-}
-
-.hero h2{
-font-size:48px;
-color:#38bdf8;
-}
-
-.hero p{
-font-size:18px;
+.subtitle{
 color:#94a3b8;
+margin-top:8px;
 }
 
-/* Sections */
+/* Social buttons */
+
+.links{
+margin-top:20px;
+}
+
+.links a{
+display:inline-block;
+background:#020617;
+border:1px solid #1e293b;
+padding:10px 16px;
+border-radius:25px;
+margin-right:10px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.links a:hover{
+background:#38bdf8;
+color:black;
+}
+
+/* Section */
 
 .section{
-padding:60px 20px;
-max-width:900px;
-margin:auto;
+margin-top:40px;
 }
 
 .section h2{
 color:#38bdf8;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
-/* Project cards */
+/* Project grid */
 
-.card{
+.projects{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.project-card{
 background:#0f172a;
-padding:25px;
-margin-bottom:25px;
-border-radius:10px;
 border:1px solid #1e293b;
+border-radius:12px;
+padding:20px;
 transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-5px);
+.project-card:hover{
 border-color:#38bdf8;
+transform:translateY(-3px);
 }
 
-/* Skills */
-
-.skills span{
-display:inline-block;
+.tags span{
 background:#1e293b;
-padding:8px 15px;
-margin:5px;
-border-radius:20px;
+padding:6px 10px;
+border-radius:15px;
+font-size:12px;
+margin-right:5px;
 }
 
 footer{
+margin-top:60px;
 text-align:center;
-padding:30px;
-border-top:1px solid #1e293b;
 color:#94a3b8;
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-<nav>
+<div class="container">
+
+<div class="header-card">
+
 <h1>MD Azhar Uddin</h1>
 
-<div>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
+<p class="subtitle">
+Computer Science Graduate • Software Developer
+</p>
+
+<div class="links">
+<a href="mailto:mdazhar6109@gmail.com">Email</a>
+<a href="https://github.com/azharuddin6109">GitHub</a>
+<a href="#">LinkedIn</a>
+<a href="resume.pdf">Resume</a>
 </div>
-</nav>
+
+</div>
 
 
-<section class="hero">
+<div class="section">
 
-<h2>Software Developer</h2>
-
-<p>
-Computer Science graduate passionate about building software,
-games, and practical digital solutions.
-</p>
-
-</section>
-
-
-<section id="about" class="section">
-
-<h2>About Me</h2>
+<h2>About</h2>
 
 <p>
-I am a Computer Science graduate from Sonargaon University.
-I enjoy building software applications, exploring game development,
-and solving technical problems through programming.
-My goal is to become a skilled software engineer and researcher.
+Computer Science graduate from Sonargaon University with interest in
+software development, game development, and building practical applications.
+I enjoy solving technical problems and creating structured, reliable systems.
 </p>
 
-</section>
+</div>
 
 
-<section id="projects" class="section">
+<div class="section">
 
 <h2>Projects</h2>
 
-<div class="card">
+<div class="projects">
+
+<div class="project-card">
 
 <h3>2D Combat Game</h3>
 
+<div class="tags">
+<span>Java</span>
+<span>Game Logic</span>
+<span>OOP</span>
+</div>
+
 <p>
-Developed a 2D action game where the player fights enemies.
-Implemented combat mechanics, enemy behavior,
-collision detection, and health systems using
-object-oriented programming principles.
+A 2D action game where the player fights enemies with combat mechanics,
+enemy behavior, collision detection, and a health system.
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="project-card">
 
 <h3>Portfolio Website</h3>
 
+<div class="tags">
+<span>HTML</span>
+<span>CSS</span>
+</div>
+
 <p>
-Personal developer portfolio built with HTML and CSS
-to showcase projects and programming skills.
+Developer portfolio website built using GitHub Pages to showcase
+projects and programming skills.
 </p>
 
 </div>
 
-</section>
-
-
-<section id="skills" class="section">
-
-<h2>Skills</h2>
-
-<div class="skills">
-
-<span>Java</span>
-<span>Python</span>
-<span>C++</span>
-<span>JavaScript</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>Git</span>
+</div>
 
 </div>
 
-</section>
-
-
-<section id="contact" class="section">
-
-<h2>Contact</h2>
-
-<p>Email: mdazhar6109@gmail.com</p>
-
-</section>
-
-
 <footer>
 
-<p>© 2026 MD Azhar Uddin</p>
+© 2026 MD Azhar Uddin
 
 </footer>
 
+</div>
 
 </body>
 </html>
